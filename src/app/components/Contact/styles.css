@@ -1,0 +1,18 @@
+.contact {
+  position: relative;
+  display: flex;
+  min-height: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url('/assets/contact/contact.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    height: 100vh;
+  }
+}

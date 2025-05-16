@@ -1,0 +1,13 @@
+.gm-style .gm-style-iw {
+  padding: 5px !important;
+  border-radius: 15px;
+}
+
+.gm-style-iw-chr {
+  position: absolute;
+  right: 0;
+}
+
+.gm-style-iw-d {
+  overflow: initial !important;
+}

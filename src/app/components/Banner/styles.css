@@ -1,0 +1,15 @@
+.sfw-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.sfw-embla__container {
+  display: flex;
+}
+.sfw-embla__slide {
+  flex: 0 0 100% !important;
+  min-width: 0;
+}
+
+.banner-for-floating-header {
+  height: calc(100vh - 84px);
+}

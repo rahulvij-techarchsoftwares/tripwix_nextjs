@@ -1,0 +1,16 @@
+export enum CardVariant {
+  Default = 'default',
+  Simple = 'simple',
+  ShowLink = 'show_link',
+  RevealLink = 'reveal_link',
+  RevealDescription = 'reveal_description',
+  KnowMore = 'know_more',
+  Property = 'property',
+  PropertyListItem = 'property_list_item',
+  Article = 'article',
+  Guide = 'guide',
+  Community = 'community',
+  Services = 'services',
+  Team = 'team',
+  Testimonial = 'testimonial',
+}

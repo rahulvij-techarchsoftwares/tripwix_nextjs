@@ -1,0 +1,15 @@
+.destination-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.destination-embla__container {
+  display: flex;
+}
+.destination-embla__slide {
+  flex: 0 0 33.333333% !important;
+  min-width: 0;
+
+  @media (max-width: 768px) {
+    flex: 0 0 80% !important;
+  }
+}

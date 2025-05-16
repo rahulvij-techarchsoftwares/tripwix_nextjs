@@ -1,0 +1,22 @@
+.anchors-navigation-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.anchors-navigation-embla__container {
+  display: flex;
+}
+.anchors-navigation-embla__slide {
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .anchors-navigation-embla__container {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+    height: auto;
+    padding: 20px 0;
+  }
+}

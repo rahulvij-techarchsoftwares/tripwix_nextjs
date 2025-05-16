@@ -1,0 +1,154 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'reset.css';
+@import 'styles/buttons.css';
+
+:root {
+  --color-primary: #1f3345;
+  --color-primary-80: #1f3345cc;
+  --color-secondary: #007bff;
+  --color-tertiary: #4f5253;
+  --color-tertiary-10: #4f52531a;
+  --color-tertiary-20: #4f525333;
+  --color-tertiary-30: #4f52534d;
+  --color-tertiary-40: #4f525366;
+  --color-tertiary-50: #4f525380;
+  --color-quaternary: #8d71420d;
+  --color-quaternary-light: #e8e3d9;
+  --color-quaternary-20: #8d714233;
+  --color-quaternary-100: #8d7142;
+  --color-quinary: #d9d9d933;
+  --color-quinary-50: #d9d9d980;
+  --color-black: #000;
+  --color-black-25: #00000044;
+  --color-black-50: #00000080;
+  --color-black-70: #000000b3;
+  --color-white: #fff;
+  --color-white-50: #ffffff80;
+  --color-error: #fb5740;
+  --color-success: #1fb796;
+  --color-warning: #007bff;
+  --color-info: #007bff;
+
+  --size2: 0.125rem;
+  --size11: 0.6875rem;
+  --size12: 0.75rem;
+  --size14: 0.875rem;
+  --size15: 0.9375rem;
+  --size16: 1rem;
+  --size17: 1.0625rem;
+  --size18: 1.125rem;
+  --size20: 1.25rem;
+  --size21: 1.3125rem;
+  --size22: 1.375rem;
+  --size24: 1.5rem;
+  --size25: 1.5625rem;
+  --size26: 1.625rem;
+  --size28: 1.75rem;
+  --size31: 1.9375rem;
+  --size33: 2.0625rem;
+  --size34: 2.125rem;
+  --size35: 2.1875rem;
+  --size38: 2.375rem;
+  --size40: 2.5rem;
+  --size41: 2.5625rem;
+  --size42: 2.625rem;
+  --size44: 2.75rem;
+  --size0_07: 0.004375rem;
+  --size0_08: 0.005rem;
+  --size0_7: 0.0438rem;
+  --size52: 3.25rem;
+  --size55: 3.4375rem;
+  --size56: 3.5rem;
+  --size62: 3.875rem;
+
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+}
+
+@layer utilities {
+  .filter-white {
+    filter: brightness(0) saturate(100%) invert(100%);
+  }
+
+  .filter-primary {
+    filter: invert(16%) sepia(13%) saturate(800%) hue-rotate(170deg)
+      brightness(20%) contrast(90%);
+  }
+}
+
+.body-lock-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+.header-dynamic-colored-icon > path {
+  stroke: currentColor;
+}
+
+.web-content {
+  ul,
+  ol {
+    column-count: 2;
+    column-gap: 10%;
+  }
+
+  ul li,
+  ol li {
+    padding: 20px 0;
+    padding-left: 45px;
+    background-image: url('/assets/icon-check.svg');
+    background-size: 20px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    break-inside: avoid;
+  }
+}
+
+.react-tel-input .country-list .search {
+  position: relative;
+  display: flex;
+}
+
+.react-tel-input .country-list .search-box {
+  border: none !important;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+  .responsive-modal {
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .web-content {
+    ul,
+    ol {
+      column-count: unset;
+    }
+  }
+
+  /* PhoneInput overwrites for any form like Contact form */
+  .react-tel-input .country-list {
+    margin-left: -25px !important;
+  }
+
+  /* PhoneInput overwrites for Booking forms */
+  .responsive-booking-form .react-tel-input .country-list {
+    position: fixed !important;
+    left: 0vh;
+    right: 0vh;
+    margin: auto !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+@import 'google-map.css';

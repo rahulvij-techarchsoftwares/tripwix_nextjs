@@ -1,0 +1,28 @@
+.rentals-filter-bar-button {
+  border: 1px solid rgba(31, 51, 69, .2);
+  transition: .25s;
+}
+
+.rentals-filter-bar-button:hover {
+  transition: border .25s;
+  border: 1px solid var(--color-primary);
+}
+
+.ReactModal__Overlay--after-open {
+  z-index: 50;
+}
+
+.rentals-filter__destination hr {
+  display: none;
+}
+
+.rentals-filter__quantity-selector img {
+  position: relative;
+  right: 10px;
+  width: 16px;
+}
+
+.rentals-filter__quantity-selector span {
+  color: var(--color-primary);
+  font-weight: 350;
+}

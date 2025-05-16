@@ -1,0 +1,85 @@
+{
+  "name": "tripwix_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-page": "plop page",
+    "generate-component": "plop component",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.4",
+    "@hookform/resolvers": "^3.9.0",
+    "@next/third-parties": "^15.1.6",
+    "@react-google-maps/api": "^2.19.3",
+    "@sentry/nextjs": "^9.11.0",
+    "@tanstack/react-query": "^5.56.2",
+    "@tanstack/react-query-devtools": "^5.56.2",
+    "@types/react-modal": "^3.16.3",
+    "axios": "^1.7.7",
+    "commitizen": "^4.3.0",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^4.1.0",
+    "embla-carousel": "^8.3.0",
+    "embla-carousel-autoplay": "^8.3.0",
+    "embla-carousel-class-names": "^8.3.0",
+    "embla-carousel-react": "^8.3.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "framer-motion": "^11.3.29",
+    "google-libphonenumber": "^3.2.40",
+    "jose": "^5.9.6",
+    "negotiator": "^0.6.3",
+    "next": "^14.2.16",
+    "next-auth": "^4.24.7",
+    "react": "^18",
+    "react-day-picker": "^9.0.9",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.2",
+    "react-modal": "^3.16.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-range": "^1.10.0",
+    "react-toastify": "^10.0.6",
+    "sharp": "^0.33.5",
+    "video.js": "^8.17.3",
+    "videojs-youtube": "^3.0.1",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/crypto-js": "^4.2.2",
+    "@types/google-libphonenumber": "^7.4.30",
+    "@types/negotiator": "^0.6.3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "plop": "^4.0.1",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+.checkbox-accordion-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+}
+
+.checkbox-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.checkbox-accordion-faq .accordion-title {
+  border-top: 1px solid var(--color-tertiary-50);
+  padding: 20px 0;
+}
+
+.checkbox-accordion-faq .checkbox-accordion-title + .checkbox-accordion-content .checkbox-accordion-content-inner {
+  padding: 10px 20px 30px 10px;
+  font-size: var(--size16);
+}

@@ -1,0 +1,11 @@
+.card-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.card-embla__container {
+  display: flex;
+}
+.card-embla__slide {
+  flex: 0 0 100% !important;
+  min-width: 0;
+}

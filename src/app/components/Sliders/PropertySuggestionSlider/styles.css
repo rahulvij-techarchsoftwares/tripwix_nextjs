@@ -1,0 +1,24 @@
+.property-suggestion-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.property-suggestion-embla__container {
+  display: flex;
+  gap: 15px;
+}
+.property-suggestion-embla__slide {
+  flex: 0 0 33% !important;
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .property-suggestion-embla__slide {
+    flex: 0 0 50% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .property-suggestion-embla__slide {
+    flex: 0 0 100% !important;
+  }
+}

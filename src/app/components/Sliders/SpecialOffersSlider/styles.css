@@ -1,0 +1,19 @@
+.special-offers-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.special-offers-embla__container {
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.special-offers-embla__slide {
+  flex: 0 0 33.333333% !important;
+  min-width: 0;
+
+  @media (max-width: 768px) {
+    flex: 0 0 100% !important;
+  }
+}

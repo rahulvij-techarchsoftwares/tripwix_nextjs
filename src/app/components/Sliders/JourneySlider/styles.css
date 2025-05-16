@@ -1,0 +1,114 @@
+.journey-embla {
+  flex: 1;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    overflow: hidden;
+  }
+}
+
+.journey-embla__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.journey-infinite-border {
+  content: '';
+  position: absolute;
+  top: 63px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--color-quaternary-light);
+}
+
+.journey-embla__slide {
+  flex: 0 0 100% !important;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .journey-embla__slide {
+    flex: 0 0 80% !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .journey-embla__slide {
+    flex: 0 0 33.33333% !important;
+  }
+}
+
+@media (min-width: 1445px) {
+  .journey-embla__slide {
+    flex: 0 0 25% !important;
+  }
+}
+
+.journey-title {
+  font-size: var(--size24);
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: var(--size20);
+  background-color: var(--color-quaternary-light);
+  color: var(--color-primary);
+  padding: 6px 20px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Inria Serif';
+  line-height: var(--size31);
+}
+
+.journey-card {
+  text-align: center;
+}
+
+.journey-card-content {
+  position: relative;
+  border-top: 5px solid var(--color-quaternary-light);
+  padding: 40px 10px;
+  @media (max-width: 768px) {
+    padding: 40px 10px 0 10px;
+  }
+}
+
+.journey-card-content::before {
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-quaternary-100);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.journey-card-content::after {
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 53px;
+  background-color: var(--color-quaternary-light);
+}
+
+.journey-image {
+  position: relative;
+  aspect-ratio: 420 / 250;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.journey-description {
+  font-size: var(--size14);
+  margin-top: 15px;
+  padding: 0 50px;
+}

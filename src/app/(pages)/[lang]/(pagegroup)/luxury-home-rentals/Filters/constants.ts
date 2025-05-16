@@ -1,0 +1,66 @@
+export const DESTINATIONS = [
+  {
+    country: 'Italy',
+    id: 1,
+    slug: 'italy',
+    cities: [
+      { id: 1, name: 'Rome', slug: 'rome' },
+      { id: 2, name: 'Florence', slug: 'florence' },
+      { id: 3, name: 'Venice', slug: 'venice' },
+      { id: 4, name: 'Milan', slug: 'milan' },
+      { id: 5, name: 'Naples', slug: 'naples' },
+      { id: 6, name: 'Sicily', slug: 'sicily' },
+    ],
+  },
+  {
+    country: 'France',
+    id: 2,
+    slug: 'france',
+    cities: [
+      { id: 1, name: 'Paris', slug: 'paris' },
+      { id: 2, name: 'Nice', slug: 'nice' },
+      { id: 3, name: 'Cannes', slug: 'cannes' },
+      { id: 4, name: 'Marseille', slug: 'marseille' },
+      { id: 5, name: 'Lyon', slug: 'lyon' },
+      { id: 6, name: 'Bordeaux', slug: 'bordeaux' },
+    ],
+  },
+  {
+    country: 'Spain',
+    id: 3,
+    slug: 'spain',
+    cities: [
+      { id: 1, name: 'Barcelona', slug: 'barcelona' },
+      { id: 2, name: 'Madrid', slug: 'madrid' },
+      { id: 3, name: 'Valencia', slug: 'valencia' },
+      { id: 4, name: 'Seville', slug: 'seville' },
+      { id: 5, name: 'Malaga', slug: 'malaga' },
+      { id: 6, name: 'Ibiza', slug: 'ibiza' },
+    ],
+  },
+  {
+    country: 'Greece',
+    id: 4,
+    slug: 'greece',
+    cities: [
+      { id: 1, name: 'Athens', slug: 'athens' },
+      { id: 2, name: 'Mykonos', slug: 'mykonos' },
+      { id: 3, name: 'Santorini', slug: 'santorini' },
+      { id: 4, name: 'Crete', slug: 'crete' },
+      { id: 5, name: 'Rhodes', slug: 'rhodes' },
+      { id: 6, name: 'Corfu', slug: 'corfu' },
+    ],
+  },
+  {
+    country: 'Portugal',
+    id: 5,
+    slug: 'portugal',
+    cities: [
+      { id: 1, name: 'Lisbon', slug: 'lisbon' },
+      { id: 2, name: 'Porto', slug: 'porto' },
+      { id: 3, name: 'Algarve', slug: 'algarve' },
+      { id: 4, name: 'Madeira', slug: 'madeira' },
+      { id: 5, name: 'Azores', slug: 'azores' },
+    ],
+  },
+];

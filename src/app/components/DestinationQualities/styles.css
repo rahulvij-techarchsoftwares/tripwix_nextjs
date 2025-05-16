@@ -1,0 +1,12 @@
+.destination-qualities-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.destination-qualities-embla__container {
+  display: flex;
+}
+.destination-qualities-embla__slide {
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: 100%;
+}

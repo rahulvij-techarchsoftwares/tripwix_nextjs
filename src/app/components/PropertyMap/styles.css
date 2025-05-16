@@ -1,0 +1,96 @@
+.gm-style .gm-style-iw-c {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .gm-style .gm-style-iw-c {
+    max-width: 350px !important;
+  }
+}
+
+.gm-style-iw-tc {
+  display: none;
+}
+
+.poi-info-window {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.scroll-container {
+  overflow-x: hidden;
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+}
+
+.embla-map-filters__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: 10px;
+}
+
+.embla-map-filters__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding-left: 10px;
+  position: relative;
+}
+
+.embla-map-filters__button {
+  position: absolute;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.embla-map-filters__button {
+  top: 3px;
+  z-index: 1;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+}
+
+.embla-map-filters__button:disabled {
+  opacity: 0.3;
+}
+
+.embla-map-filters__button__svg {
+  width: 45%;
+  height: 45%;
+}
+
+.embla-map-filters__viewport {
+  overflow: hidden;
+}
+
+.embla-map-filters__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+}
+
+.embla-map-filters__button--prev {
+  left: -40px;
+  @media (max-width: 768px) {
+    left: -15px;
+  }
+}
+
+.embla-map-filters__button--next {
+  right: -40px;
+  @media (max-width: 768px) {
+    right: -15px;
+  }
+}

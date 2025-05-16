@@ -1,0 +1,15 @@
+.team-embla {
+    overflow: hidden;
+    flex: 1;
+}
+.team-embla__container {
+    display: flex;
+    align-items: start;
+}
+.team-embla__slide {
+    flex: 0 0 20% !important;
+    min-width: 0;
+    @media (max-width: 1024px) {
+        flex: 0 0 80% !important;
+    }
+}

@@ -1,0 +1,11 @@
+.articles-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.articles-embla__container {
+  display: flex;
+}
+.articles-embla__slide {
+  flex: 0 0 270px !important;
+  min-width: 0;
+}

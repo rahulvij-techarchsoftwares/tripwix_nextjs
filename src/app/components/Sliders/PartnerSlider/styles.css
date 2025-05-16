@@ -1,0 +1,14 @@
+.partner-slider-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.partner-slider-embla__container {
+  display: flex;
+}
+.partner-slider-embla__slide {
+  flex: 0 0 14% !important;
+  min-width: 0;
+  @media (max-width: 1200px) {
+    flex: 0 0 33% !important;
+  }
+}

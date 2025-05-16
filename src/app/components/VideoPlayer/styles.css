@@ -1,0 +1,7 @@
+.vjs-poster img {
+  object-fit: cover;
+}
+
+.video-js .vjs-big-play-button {
+  display: none;
+}

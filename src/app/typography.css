@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Inria_Serif/InriaSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Inria_Serif/InriaSerif-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Inter/Inter-Variable.ttf');
+}
+
+html {
+  /* font-size: 62.5%; // 1rem = 10px */
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Inter';
+  font-size: var(--size16);
+  line-height: var(--size22);
+  letter-spacing: var(--size0_7);
+  font-weight: 350;
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+.h1 {
+  padding-bottom: var(--size55);
+  font-family: 'Inria Serif';
+  font-size: var(--size52);
+  line-height: var(--size62);
+  font-weight: 300;
+  letter-spacing: calc(var(--size0_08) * -1);
+  @media (max-width: 1024px) {
+    padding-bottom: var(--size20);
+    font-size: var(--size44);
+  }
+}
+
+h2,
+.h2 {
+  padding-bottom: var(--size55);
+  font-family: 'Inria Serif';
+  font-size: var(--size42);
+  line-height: var(--size56);
+  font-weight: 300;
+  letter-spacing: calc(var(--size0_08) * -1);
+  @media (max-width: 1024px) {
+    font-size: var(--size28);
+    line-height: var(--size38);
+  }
+}
+
+.h2 {
+  @media (max-width: 768px) {
+    font-size: var(--size28);
+    line-height: var(--size38);
+  }
+}
+
+.h2,
+.h3 {
+  padding-bottom: inherit;
+}
+
+h3,
+.h3 {
+  font-size: var(--size34);
+  line-height: var(--size41);
+  font-family: 'Inria Serif';
+  @media (max-width: 1024px) {
+    font-size: var(--size26);
+    line-height: var(--size34);
+  }
+}
+
+.h3-small {
+  font-size: var(--size34);
+  line-height: var(--size41);
+  font-family: 'Inria Serif';
+  @media (max-width: 1024px) {
+    font-size: var(--size21);
+    line-height: var(--size31);
+  }
+}
+
+h4 {
+  font-size: var(--size25);
+  line-height: var(--size35);
+  font-family: 'Inter';
+  @media (max-width: 1024px) {
+    font-size: var(--size21);
+    line-height: var(--size31);
+  }
+}
+
+h5,
+.h5 {
+  padding-bottom: var(--size20);
+  font-size: var(--size21);
+  line-height: var(--size31);
+  letter-spacing: var(--size0_7);
+  color: var(--color-tertiary);
+  font-family: 'Inter';
+  @media (max-width: 1024px) {
+    font-size: var(--size18);
+    line-height: var(--size25);
+  }
+}
+
+p {
+  padding-bottom: var(--size17);
+  font-weight: 400;
+  line-height: var(--size25);
+}
+
+small {
+  letter-spacing: var(--size2);
+}
+
+.font-serif {
+  font-family: 'Inria Serif';
+}

@@ -1,0 +1,20 @@
+// These styles are a reference to src/app/components/CTA/styles/constants.ts:
+export enum ButtonVariants {
+  Default = 'default',
+  Link = 'link',
+  Primary = 'primary',
+  Secondary = 'secondary',
+  Success = 'success',
+  FormFieldSuccess = 'form-field-success',
+  FormFieldFilterBar = 'form-field-filter-bar',
+  Danger = 'danger',
+  Dropdown = 'dropdown',
+  DropdownFooter = 'dropdown-footer',
+  DropdownActive = 'dropdown-active',
+  DropdownHeader = 'dropdown-header',
+  Popup = 'popup',
+  PopupTransparent = 'popupTransparent',
+  WhiteTransparent = 'whiteTransparent',
+  Newsletter = 'newsletter',
+  BookingFormSuccess = 'bookingFormSuccess',
+}

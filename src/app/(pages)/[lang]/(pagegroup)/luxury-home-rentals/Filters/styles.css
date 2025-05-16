@@ -1,0 +1,42 @@
+.responsive-filters-toggle-button {
+  display: none;
+}
+
+.responsive-filters-toggle-button--close {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .responsive-filters-toggle-button {
+    display: flex;
+  }
+
+  .responsive-filters {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: #fff;
+    z-index: 20;
+
+    transform: translateX(-100%);
+    transition: 0.5s all;
+  }
+
+  .responsive-filters > div:first-child {
+    overflow: auto;
+    height: 100%;
+  }
+
+  .responsive-filters .responsive-filters-toggle-button--close {
+    display: block;
+  }
+
+  .responsive-filters.open {
+    transform: translateX(0);
+  }
+}

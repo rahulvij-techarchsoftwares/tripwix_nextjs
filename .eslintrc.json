@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react/no-array-index-key": "warn",
+    "import/no-cycle": ["error", { "maxDepth": 1 }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": []
+      }
+    ],
+    "no-debugger": "error"
+  },
+  "plugins": ["simple-import-sort"]
+}

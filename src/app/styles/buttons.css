@@ -1,0 +1,14 @@
+.btn {
+  padding: .9rem 2.5rem;
+}
+
+.btn-success {
+  transition: background-color 0.3s;
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.btn-success:hover {
+  transition: background-color 0.3s;
+  background-color: var(--color-primary);
+}

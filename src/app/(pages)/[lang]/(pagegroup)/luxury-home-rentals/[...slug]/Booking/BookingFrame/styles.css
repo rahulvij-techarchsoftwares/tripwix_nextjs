@@ -1,0 +1,9 @@
+.responsive-booking-form {
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .responsive-booking-form {
+    overflow: initial;
+  }
+}

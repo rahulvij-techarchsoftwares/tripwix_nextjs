@@ -1,0 +1,27 @@
+.twfws-embla {
+  overflow: hidden;
+  flex: 1;
+}
+.twfws-embla__container {
+  display: flex;
+}
+.twfws-embla__slide {
+  flex: 0 0 100% !important;
+  min-width: 0;
+}
+
+.twfws-embla__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--color-tertiary);
+  opacity: 0.5;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.twfws-embla__dot--selected {
+  opacity: 1;
+  border-color: var(--color-success);
+  background-color: var(--color-success);
+}
