@@ -115,6 +115,7 @@ export interface FetchedPropertyData {
   permit_id: number;
   tax_id: number;
   know_before_you_go: string;
+  location_para: string;
   Special_Features: string;
   Living_Areas: string;
   location_Description: string;

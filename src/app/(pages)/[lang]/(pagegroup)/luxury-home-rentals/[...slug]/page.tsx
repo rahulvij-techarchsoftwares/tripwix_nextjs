@@ -235,7 +235,7 @@ export default async function PropertyDetailPage({
                       />
                     </>
                   ) : null}
-                  {fetchedPropertyData.bedbath ? (
+                  {/* {fetchedPropertyData.bedbath ? (
                     <Accordion
                       title={'Rooms'}
                       variant={AccordionVariants.Featured}
@@ -245,31 +245,7 @@ export default async function PropertyDetailPage({
                       </div>
                       <hr />
                     </Accordion>
-                  ) : null}
-                  {fetchedPropertyData.amenities.length > 0 && (
-                    <div className={'mt-10'}>
-                      <Accordion
-                        title={'Features and Amenities'}
-                        variant={AccordionVariants.Featured}
-                      >
-                        <Amenities amenities={fetchedPropertyData.amenities} />
-                      </Accordion>
-                    </div>
-                  )}
-                  {fetchedPropertyData.know_before_you_go && (
-                    <div className={'mt-10'}>
-                      <Accordion
-                        title={'Know Before You Go'}
-                        variant={AccordionVariants.Featured}
-                      >
-                        <div className="my-6 web-content">
-                          <HtmlParser
-                            htmlContent={fetchedPropertyData.know_before_you_go}
-                          />
-                        </div>
-                      </Accordion>
-                    </div>
-                  )}
+                  ) : null} */}
                   {fetchedPropertyData.Special_Features && (
                     <div className={'mt-10'}>
                       <Accordion
@@ -298,7 +274,45 @@ export default async function PropertyDetailPage({
                       </Accordion>
                     </div>
                   )}
-                  {fetchedPropertyData.location_Description && (
+                  {fetchedPropertyData.bedbath && (
+                    <div className={'mt-10'}>
+                      <Accordion
+                        title={'Rooms'}
+                        variant={AccordionVariants.Featured}
+                      >
+                        <div className="my-6 web-content">
+                          <HtmlParser
+                            htmlContent={fetchedPropertyData.bedbath}
+                          />
+                        </div>
+                      </Accordion>
+                    </div>
+                  )}
+                  {fetchedPropertyData.location_extra && (
+                    <div className={'mt-10'}>
+                      <Accordion
+                        title={'Location'}
+                        variant={AccordionVariants.Featured}
+                      >
+                        <div className="my-6 web-content">
+                          <HtmlParser
+                            htmlContent={fetchedPropertyData.location_extra}
+                          />
+                        </div>
+                      </Accordion>
+                    </div>
+                  )}
+                  {fetchedPropertyData.amenities.length > 0 && (
+                    <div className={'mt-10'}>
+                      <Accordion
+                        title={'Amenities'}
+                        variant={AccordionVariants.Featured}
+                      >
+                        <Amenities amenities={fetchedPropertyData.amenities} />
+                      </Accordion>
+                    </div>
+                  )}
+                  {/* {fetchedPropertyData.location_Description && (
                     <div className={'mt-10'}>
                       <Accordion
                         title={'Location Description'}
@@ -311,7 +325,7 @@ export default async function PropertyDetailPage({
                         </div>
                       </Accordion>
                     </div>
-                  )}
+                  )} */}
                   {fetchedPropertyData.rental_price_included && (
                     <div className={'mt-10 mb-10'}>
                       <Accordion
@@ -328,11 +342,25 @@ export default async function PropertyDetailPage({
                       </Accordion>
                     </div>
                   )}
-                  <hr />
+                  {fetchedPropertyData.know_before_you_go && (
+                    <div className={'mt-10'}>
+                      <Accordion
+                        title={'Know Before You Go'}
+                        variant={AccordionVariants.Featured}
+                      >
+                        <div className="my-6 web-content">
+                          <HtmlParser
+                            htmlContent={fetchedPropertyData.know_before_you_go}
+                          />
+                        </div>
+                      </Accordion>
+                    </div>
+                  )}
+                  {/* <hr /> */}
                   {fetchedPropertyData.tax_id ? (
                     <p className={'mt-6 mb-10'}>{fetchedPropertyData.tax_id}</p>
                   ) : null}
-                  {fetchedPropertyData.special_offer_description ? (
+                  {/* {fetchedPropertyData.special_offer_description ? (
                     <Accordion
                       title={'Special Offers'}
                       variant={AccordionVariants.Featured}
@@ -346,7 +374,7 @@ export default async function PropertyDetailPage({
                       </div>
                       <hr />
                     </Accordion>
-                  ) : null}
+                  ) : null} */}
                 </div>
                 <div className="w-full left-0 right-0 lg:w-5/12 xl:w-4/12 p-2 lg:p-0 lg:pl-12 flex flex-col order-1 lg:order-2 absolute top-[90px] lg:top-0 lg:static z-10">
                   <BookingFrameProvider
