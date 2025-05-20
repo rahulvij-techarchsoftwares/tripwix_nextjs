@@ -32,4 +32,5 @@ export interface PropertyPropsAPI {
   property_url: string;
   special_offer_line?: string;
   property_category_name: string;
+  location_extra: string;
 }

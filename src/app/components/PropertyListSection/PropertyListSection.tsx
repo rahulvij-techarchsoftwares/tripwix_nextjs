@@ -104,6 +104,7 @@ export const PropertyListSection: React.FC<PropertyListSectionProps> = ({
         pin: item.title || 'Unknown Location',
         thumbnail: item.photos?.[0]?.image || '/assets/properties/default.jpg',
         slug: item.property_url || 'unknown-location',
+        location_extra: item.location_extra || '',
       })
     );
     return places;
